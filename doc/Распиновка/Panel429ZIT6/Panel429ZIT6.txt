@@ -26,10 +26,10 @@ A15
 A16
 A17
 A18
-D0
-D1
-D2
-D3
+D0  85  PD14
+D1  86  PD15
+D2  114 PD0
+D3  115 PD1
 D4  58  PE7
 D5  59  PE8
 D6  60  PE9
@@ -56,13 +56,13 @@ B6    139  PB8
 B7    140  PB9
 
 *** Выводы ***
-1   RL0         51  VSS          101
-2   RL1         52  VDD          102
-3   RL2         53  FMC_A7       103 LTDC_R4
-4   RL3         54  FMC_A8       104 LTDC_R5
-5   RL4         55  FMC_A9       105 TMS-SWDIO
+1   DISP_3      51  VSS          101
+2   DISP_4      52  VDD          102
+3   DISP_5      53  FMC_A7       103 LTDC_R4
+4   DISP_6      54  FMC_A8       104 LTDC_R5
+5   DISP_7      55  FMC_A9       105 TMS-SWDIO
 6   VBAT        56  FMC_A10      106 VCAP_2
-7   RL5         57  FMC_A11      107 VSS
+7               57  FMC_A11      107 VSS
 8               58  FMC_D4       108 VDD
 9               59  FMC_D5       109 TCK-SWCLK
 10  FMC_A0      60  FMC_D6       110 TDI
@@ -73,18 +73,18 @@ B7    140  PB9
 15  FMC_A5      65  FMC_D9       115 FMC_D3
 16  VSS         66  FMC_D10      116
 17  VDD         67  FMC_D11      117 LTDC_G7
-18              68  FMC_D12      118 FMC_NOE
-19              69  LTDC_G4      119 FMC_NWE
-20              70  LTDC_G5      120 VSS
-21              71  VCAP_1       121 VDD
+18  SL0         68  FMC_D12      118 FMC_NOE
+19  SL1         69  LTDC_G4      119 FMC_NWE
+20  SL2         70  LTDC_G5      120 VSS
+21  SL3         71  VCAP_1       121 VDD
 22  LTDC_DE     72  VDD          122 LTDC_B2
 23              73               123 FMC_NE1
 24              74               124
 25  NRST        75               125 LTDC_G3
-26              76               126 LTDC_B3
-27              77  FMC_D13      127 LTDC_B4
-28              78  FMC_D14      128 SL0
-29              79  FMC_D15      129 SL1
+26  SL4         76               126 LTDC_B3
+27  SL5         77  FMC_D13      127 LTDC_B4
+28  SL6         78  FMC_D14      128 SL0
+29  SL7         79  FMC_D15      129 SL1
 30  VDD         80  FMC_A16      130 VSS
 31  VSSA        81  FMC_A17      131 VDD
 32  VREF+       82  FMC_A18      132 SL2
@@ -96,8 +96,8 @@ B7    140  PB9
 38  VSS         88  FMC_A13      138 BOOT0
 39  VDD         89  FMC_A14      139 LTDC_B6
 40  LTDC_VSYNC  90  FMC_A15      140 LTDC_B7
-41              91  LTDC_CL      141 SL6
-42  LTDC_G2     92  LTDC_R7      142 SL7
+41              91  LTDC_CL      141 DISP_1
+42  LTDC_G2     92  LTDC_R7      142 DISP_2
 43              93               143 PDR_ON
 44              94  VSS          144 VDD
 45              95  VDD
@@ -148,14 +148,14 @@ PC4
 PC5
 PC6
 PC7
-PC8
-PC9
-PC10
-PC11
-PC12
-PC13
-PC14
-PC15
+PC8     98  DISP_8
+PC9     99  DISP_9
+PC10    111 LTDC_R2
+PC11    112 DISP_10
+PC12    113 DISP_11
+PC13    7   DISP_12
+PC14    8   DISP_13
+PC15    9   DISP_14
 PD0
 PD1
 PD2
@@ -172,14 +172,14 @@ PD12
 PD13
 PD14
 PD15
-PE0
-PE1
-PE2
-PE3
-PE4
-PE5
-PE6
-PE7
+PE0     141 DISP_1
+PE1     142 DISP_2
+PE2     1   DISP_3
+PE3     2   DISP_4
+PE4     3   DISP_5
+PE5     4   DISP_6
+PE6     5   DISP_7
+PE7     58  FMC_D4
 PE8
 PE9
 PE10
@@ -188,3 +188,29 @@ PE12
 PE13
 PE14
 PE15
+
+        Занято
+PA0...7   3
+PA8..15   3
+PB0...7   2
+PB8..15   2
+PC0...7   2
+PC8..15   1
+PD0...7   3
+PD8..15   3
+PE0...7   1
+PE8..15   3
+PF0...7   3
+PF8..15   3
+
+Занято
+  | PC0  | PE0  |
+  | ...7 | ...7 |
+0 |  -   |  -   |
+1 |  -   |  -   |
+2 |  -   |  -   |
+3 |  -   |  -   |
+4 |  -   |  -   |
+5 |  -   |  -   |
+6 |  +   |  -   |
+7 |  +   |  +   |
