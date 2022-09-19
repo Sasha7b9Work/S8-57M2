@@ -1,0 +1,190 @@
+*** Функции ***
+
+ * SWD *
+TMS-SWDIO       105 PA13
+TCK-SWCLK       109 PA14
+TDO-TRACESWO    133 PB3
+
+ * FMC *
+NE1 123 PD7
+A0  10  PF0
+A1  11  PF1
+A2  12  PF2
+A3  13  PF3
+A4  14  PF4
+A5  15  PF5
+A6  50  PF12
+A7  53  PF13
+A8  54  PF14
+A9  55  PF15
+A10 56  PG0
+A11 57  PG1
+A12
+A13
+A14
+A15
+A16
+A17
+A18
+D0
+D1
+D2
+D3
+D4  58  PE7
+D5  59  PE8
+D6  60  PE9
+D7
+D8
+D9
+D10
+D11
+D12
+D13
+D14
+D15
+
+ * LTDC *
+DE    22   PF10
+VSYNC 40   PA4
+R3    46   PB0
+R6    47   PB1
+G2    42   PA6
+B3    126  PG11
+B4    127  PG12
+B5    37   PA3
+B6    139  PB8
+B7    140  PB9
+
+*** Выводы ***
+1                       51  VSS                 101
+2                       52  VDD                 102
+3                       53                      103
+4                       54                      104
+5                       55                      105 PA13 TMS-SWDIO
+6   VBAT                56                      106      VCAP_2
+7                       57                      107      VSS
+8                       58                      108      VDD
+9                       59                      109 PA14 TCK-SWCLK
+10                      60                      110
+11                      61  VSS                 111
+12                      62  VDD                 112
+13                      63                      113
+14                      64                      114
+15                      65                      115
+16  VSS                 66                      116
+17  VDD                 67                      117
+18                      68                      118
+19                      69                      119
+20                      70                      120 VSS
+21                      71  VCAP_1              121 VDD
+22                      72  VDD                 122
+23                      73                      123
+24                      74                      124
+25  NRST                75                      125
+26                      76                      126
+27                      77                      127
+28                      78                      128
+29                      79                      129
+30  VDD                 80                      130 VSS
+31  VSSA                81                      131 VDD
+32  VREF+               82                      132
+33  VDDA                83  VSS                 133 PB3 TDO-TRACESWO
+34                      84  VDD                 134
+35                      85                      135
+36                      86                      136
+37                      87                      137
+38  VSS                 88                      138 BOOT0
+39  VDD                 89                      139
+40                      90                      140
+41                      91                      141
+42                      92                      142
+43                      93                      143 PDR_ON
+44                      94  VSS                 144 VDD
+45                      95  VDD                 
+46                      96                      
+47                      97                      
+48                      98                      
+49                      99                      
+50                      100                     
+
+*** Порты ***
+PA0
+PA1
+PA2
+PA3
+PA4
+PA5
+PA6
+PA7
+PA8
+PA9
+PA10
+PA11
+PA12
+PA13 105 TMS-SWDIO
+PA14 109 TCK-SWCLK
+PA15
+PB0
+PB1
+PB2
+PB3  133 TDO-TRACESWO
+PB4
+PB5
+PB6
+PB7
+PB8
+PB9
+PB10
+PB11
+PB12
+PB13
+PB14
+PB15
+PC0
+PC1
+PC2
+PC3
+PC4
+PC5
+PC6
+PC7
+PC8
+PC9
+PC10
+PC11
+PC12
+PC13
+PC14
+PC15
+PD0
+PD1
+PD2
+PD3
+PD4
+PD5
+PD6
+PD7
+PD8
+PD9
+PD10
+PD11
+PD12
+PD13
+PD14
+PD15
+PE0
+PE1
+PE2
+PE3
+PE4
+PE5
+PE6
+PE7
+PE8
+PE9
+PE10
+PE11
+PE12
+PE13
+PE14
+PE15
