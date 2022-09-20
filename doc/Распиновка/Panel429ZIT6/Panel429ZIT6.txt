@@ -46,6 +46,9 @@ D15
  * LTDC *
 DE    22 /PF10
 VSYNC 40 /PA4
+PWM   41 /PA5
+RL    43 /PA7
+UD    44 /PC4
 R3    46 /PB0
 R6    47 /PB1
 G2    42 /PA6
@@ -60,10 +63,10 @@ B7    140/PB9
 2   DISP_4    38  VSS          74            110 TDI
 3   DISP_5    39  VDD          75            111 LTDC_R2
 4   DISP_6    40  LTDC_VSYNC   76            112 DISP_10
-5   DISP_7    41               77  FMC_D13   113 DISP_11
+5   DISP_7    41  LTDC_PWM     77  FMC_D13   113 DISP_11
 6   VBAT      42  LTDC_G2      78  FMC_D14   114 FMC_D2
-7   DISP_12   43               79  FMC_D15   115 FMC_D3
-8   DISP_13   44               80  FMC_A16   116
+7   DISP_12   43  LTDC_RL      79  FMC_D15   115 FMC_D3
+8   DISP_13   44  LTDC_UD      80  FMC_A16   116
 9   DISP_14   45               81  FMC_A17   117 LTDC_G7
 10  FMC_A0    46  LTDC_R3      82  FMC_A18   118 FMC_NOE
 11  FMC_A1    47  LTDC_R6      83  VSS       119 FMC_NWE
@@ -99,10 +102,10 @@ PA0                 PB0 /46 LTDC_R3        PC0 /26 SL4        PD0 /114 FMC_D2   
 PA1                 PB1 /47 LTDC_R6        PC1 /27 SL5        PD1 /115 FMC_D3   PE1 /142 DISP_2   PF1 /11 FMC_A1   PG1 /57 FMC_A11
 PA2 /37 LTDC_B5     PB2                    PC2 /28 SL6        PD2               PE2 /1   DISP_3   PF2 /12 FMC_A2   PG2 /87 FMC_A12
 PA3                 PB3 /133 TDO-TRACESWO  PC3 /29 SL7        PD3 /117 LTDC_G7  PE3 /2   DISP_4   PF3 /13 FMC_A3   PG3 /88 FMC_A13
-PA4 /40 LTDC_VSYNC  PB4                    PC4                PD4 /118 FMC_NOE  PE4 /3   DISP_5   PF4 /14 FMC_A4   PG4 /89 FMC_A14
-PA5                 PB5 /135 RL3           PC5                PD5 /119 FMC_NWE  PE5 /4   DISP_6   PF5 /15 FMC_A5   PG5 /90 FMC_A15
+PA4 /40 LTDC_VSYNC  PB4                    PC4 /44 LTDC_UD    PD4 /118 FMC_NOE  PE4 /3   DISP_5   PF4 /14 FMC_A4   PG4 /89 FMC_A14
+PA5 /41 LTDC_PWM    PB5 /135 RL3           PC5                PD5 /119 FMC_NWE  PE5 /4   DISP_6   PF5 /15 FMC_A5   PG5 /90 FMC_A15
 PA6 /42 LTDC_G2     PB6 /136 RL4           PC6 /96 LTDC_HSYNC PD6 /122 LTDC_B2  PE6 /5   DISP_7   PF6 /18 SL0      PG6 /91 LTDC_R7
-PA7                 PB7 /137 RL5           PC7 /97 LTDC_G6    PD7 /123 FMC_NE1  PE7 /58  FMC_D4   PF7 /19 SL1      PG7 /92 LTDC_CLK
+PA7 /43 LTDC_RL     PB7 /137 RL5           PC7 /97 LTDC_G6    PD7 /123 FMC_NE1  PE7 /58  FMC_D4   PF7 /19 SL1      PG7 /92 LTDC_CLK
 PA8                 PB8 /139 LTDC_B6       PC8 /98  DISP_8    PD8 /77 FMC_D13   PE8 /59  FMC_D5   PF8 /20 SL2      PG8
 PA9                 PB9 /140 LTDC_B7       PC9 /99  DISP_9    PD9 /78 FMC_D14   PE9 /60  FMC_D6   PF9 /21 SL3      PG9
 PA10                PB10                   PC10/111 LTDC_R2   PD10/79 FMC_D15   PE10/63  FMC_D7   PF10/22 LTDC_DE  PG10/125 LTDC_G3
