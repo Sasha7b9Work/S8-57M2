@@ -1,3 +1,60 @@
+*** Выводы ***
+ 1/PE2  DISP_3 AD4    37/PA3  LTDC_B5       73/PB12 -         109/PA14 TCK-SWCLK
+ 2/PE3  DISP_4 AD5    38/     VSS           74/PB13 -         110/PA15 TDI
+ 3/PE4  DISP_5 AD6    39/     VDD           75/PB14 -         111/PC10 LTDC_R2
+ 4/PE5  DISP_6 AD7    40/PA4  LTDC_VSYNC    76/PB15 -         112/PC11 DISP_10 AD0
+ 5/PE6  DISP_7        41/PA5  LTDC_PWM      77/PD8  FMC_D13   113/PC12 DISP_11 AD1
+ 6/     VBAT          42/PA6  LTDC_G2       78/PD9  FMC_D14   114/PD0  FMC_D2
+ 7/PC13 DISP_12 SEL_0 43/PA7  LTDC_RL       79/PD10 FMC_D15   115/PD1  FMC_D3
+ 8/PC14 DISP_13 CS_0  44/PC4  LTDC_UD       80/PD11 FMC_A16   116/PD2  -
+ 9/PC15 DISP_14 CS_1  45/PC5  -             81/PD12 FMC_A17   117/PD3  LTDC_G7
+10/PF0  FMC_A0        46/PB0  LTDC_R3       82/PD13 FMC_A18   118/PD4  FMC_NOE
+11/PF1  FMC_A1        47/PB1  LTDC_R6       83/     VSS       119/PD5  FMC_NWE
+12/PF2  FMC_A2        48/PB2  -             84/     VDD       120/     VSS
+13/PF3  FMC_A3        49/PF11 -             85/PD14 FMC_D0    121/     VDD
+14/PF4  FMC_A4        50/PF12 FMC_A6        86/PD15 FMC_D1    122/PD6  LTDC_B2
+15/PF5  FMC_A5        51/     VSS           87/PG2  FMC_A12   123/PD7  FMC_NE1
+16/     VSS           52/     VDD           88/PG3  FMC_A13   124/PG9  -
+17/     VDD           53/PF13 FMC_A7        89/PG4  FMC_A14   125/PG10 LTDC_G3
+18/PF6  SL_RL         54/PF14 FMC_A8        90/PG5  FMC_A15   126/PG11 LTDC_B3
+19/PF7  SL_RL         55/PF15 FMC_A9        91/PG6  LTDC_R7   127/PG12 LTDC_B4
+20/PF8  SL_RL         56/PG0  FMC_A10       92/PG7  LTDC_CLK  128/PG13 RL_SL
+21/PF9  SL_RL         57/PG1  FMC_A11       93/PG8            129/PG14 RL_SL
+22/PF10 LTDC_DE       58/PE7  FMC_D4        94/     VSS       130/     VSS
+23/PH0  -             59/PE8  FMC_D5        95/     VDD       131/     VDD
+24/PH1  -             60/PE9  FMC_D6        96/PC6  LTDC_HSYNC132/PG15 SL2
+25/     NRST          61/     VSS           97/PC7  LTDC_G6   133/PB3  TDO-TRACESWO
+26/PC0  SL_RL         62/     VDD           98/PC8  DISP_8 WR 134/PB4  -
+27/PC1  SL_RL         63/PE10 FMC_D7        99/PC9  DISP_9 RD 135/PB5  RL_SL
+28/PC2  SL_RL         64/PE11 FMC_D8       100/PA8  -         136/PB6  RL_SL
+29/PC3  SL_RL         65/PE12 FMC_D9       101/PA9  -         137/PB7  RL_SL
+30/     VDD           66/PE13 FMC_D10      102/PA10 -         138/     BOOT0
+31/     VSSA          67/PE14 FMC_D11      103/PA11 LTDC_R4   139/PB8  LTDC_B6
+32/     VREF+         68/PE15 FMC_D12      104/PA12 LTDC_R5   140/PB9  LTDC_B7
+33/     VDDA          69/PB10 LTDC_G4      105/PA13 TMS-SWDIO 141/PE0  DISP_1 AD2
+34/PA0  -             70/PB11 LTDC_G5      106/     VCAP_2    142/PE1  DISP_2 AD3
+35/PA1  -             71/     VCAP_1       107/     VSS       143/     PDR_ON
+36/PA2  -             72/     VDD          108/     VDD       144/     VDD
+
+*** Порты ***
+PA0                 PB0 /46 LTDC_R3        PC0 /26 SL4        PD0 /114 FMC_D2   PE0 /141 DISP_1   PF0 /10 FMC_A0   PG0 /56 FMC_A10
+PA1                 PB1 /47 LTDC_R6        PC1 /27 SL5        PD1 /115 FMC_D3   PE1 /142 DISP_2   PF1 /11 FMC_A1   PG1 /57 FMC_A11
+PA2 /37 LTDC_B5     PB2                    PC2 /28 SL6        PD2               PE2 /1   DISP_3   PF2 /12 FMC_A2   PG2 /87 FMC_A12
+PA3                 PB3 /133 TDO-TRACESWO  PC3 /29 SL7        PD3 /117 LTDC_G7  PE3 /2   DISP_4   PF3 /13 FMC_A3   PG3 /88 FMC_A13
+PA4 /40 LTDC_VSYNC  PB4                    PC4 /44 LTDC_UD    PD4 /118 FMC_NOE  PE4 /3   DISP_5   PF4 /14 FMC_A4   PG4 /89 FMC_A14
+PA5 /41 LTDC_PWM    PB5 /135 RL3           PC5                PD5 /119 FMC_NWE  PE5 /4   DISP_6   PF5 /15 FMC_A5   PG5 /90 FMC_A15
+PA6 /42 LTDC_G2     PB6 /136 RL4           PC6 /96 LTDC_HSYNC PD6 /122 LTDC_B2  PE6 /5   DISP_7   PF6 /18 SL0      PG6 /91 LTDC_R7
+PA7 /43 LTDC_RL     PB7 /137 RL5           PC7 /97 LTDC_G6    PD7 /123 FMC_NE1  PE7 /58  FMC_D4   PF7 /19 SL1      PG7 /92 LTDC_CLK
+PA8                 PB8 /139 LTDC_B6       PC8 /98  DISP_8    PD8 /77 FMC_D13   PE8 /59  FMC_D5   PF8 /20 SL2      PG8
+PA9                 PB9 /140 LTDC_B7       PC9 /99  DISP_9    PD9 /78 FMC_D14   PE9 /60  FMC_D6   PF9 /21 SL3      PG9
+PA10                PB10                   PC10/111 LTDC_R2   PD10/79 FMC_D15   PE10/63  FMC_D7   PF10/22 LTDC_DE  PG10/125 LTDC_G3
+PA11/103 LTDC_R4    PB11                   PC11/112 DISP_10   PD11/80 FMC_A16   PE11/64  FMC_D8   PF11             PG11/126 LTDC_B3
+PA12/104 LTDC_R5    PB12                   PC12/113 DISP_11   PD12/81 FMC_A17   PE12/65  FMC_D9   PF12/50 FMC_A6   PG12/127 LTDC_B4
+PA13/105 TMS-SWDIO  PB13                   PC13/7   DISP_12   PD13/82 FMC_A18   PE13/66  FMC_D10  PF13/53 FMC_A7   PG13/128 RL0
+PA14/109 TCK-SWCLK  PB14                   PC14/8   DISP_13   PD14/85 FMC_D0    PE14/67  FMC_D11  PF14/54 FMC_A8   PG14/129 RL1
+PA15/110 JTDI       PB15                   PC15/9   DISP_14   PD15/86 FMC_D1    PE15/68  FMC_D12  PF15/55 FMC_A9   PG15/132 RL2
+
+
 *** Функции ***
 
  * SWD *
@@ -57,60 +114,3 @@ B4    127/PG12
 B5    37 /PA3
 B6    139/PB8
 B7    140/PB9
-
-*** Выводы ***
-1   DISP_3    37  LTDC_B5      73            109 TCK-SWCLK
-2   DISP_4    38  VSS          74            110 TDI
-3   DISP_5    39  VDD          75            111 LTDC_R2
-4   DISP_6    40  LTDC_VSYNC   76            112 DISP_10
-5   DISP_7    41  LTDC_PWM     77  FMC_D13   113 DISP_11
-6   VBAT      42  LTDC_G2      78  FMC_D14   114 FMC_D2
-7   DISP_12   43  LTDC_RL      79  FMC_D15   115 FMC_D3
-8   DISP_13   44  LTDC_UD      80  FMC_A16   116
-9   DISP_14   45               81  FMC_A17   117 LTDC_G7
-10  FMC_A0    46  LTDC_R3      82  FMC_A18   118 FMC_NOE
-11  FMC_A1    47  LTDC_R6      83  VSS       119 FMC_NWE
-12  FMC_A2    48               84  VDD       120 VSS
-13  FMC_A3    49               85  FMC_D0    121 VDD
-14  FMC_A4    50  FMC_A6       86  FMC_D1    122 LTDC_B2
-15  FMC_A5    51  VSS          87  FMC_A12   123 FMC_NE1
-16  VSS       52  VDD          88  FMC_A13   124
-17  VDD       53  FMC_A7       89  FMC_A14   125 LTDC_G3
-18  SL_RL     54  FMC_A8       90  FMC_A15   126 LTDC_B3
-19  SL_RL     55  FMC_A9       91  LTDC_CL   127 LTDC_B4
-20  SL_RL     56  FMC_A10      92  LTDC_R7   128 RL_SL
-21  SL_RL     57  FMC_A11      93            129 RL_SL
-22  LTDC_DE   58  FMC_D4       94  VSS       130 VSS
-23            59  FMC_D5       95  VDD       131 VDD
-24            60  FMC_D6       96  LTDC_HSYNC132 SL2
-25  NRST      61  VSS          97  LTDC_G6   133 TDO-TRACESWO
-26  SL_RL     62  VDD          98  DISP_8    134
-27  SL_RL     63  FMC_D7       99  DISP_9    135 RL_SL
-28  SL_RL     64  FMC_D8       100           136 RL_SL
-29  SL_RL     65  FMC_D9       101           137 RL_SL
-30  VDD       66  FMC_D10      102           138 BOOT0
-31  VSSA      67  FMC_D11      103 LTDC_R4   139 LTDC_B6
-32  VREF+     68  FMC_D12      104 LTDC_R5   140 LTDC_B7
-33  VDDA      69  LTDC_G4      105 TMS-SWDIO 141 DISP_1
-34            70  LTDC_G5      106 VCAP_2    142 DISP_2
-35            71  VCAP_1       107 VSS       143 PDR_ON
-36            72  VDD          108 VDD       144 VDD
-
-
-*** Порты ***
-PA0                 PB0 /46 LTDC_R3        PC0 /26 SL4        PD0 /114 FMC_D2   PE0 /141 DISP_1   PF0 /10 FMC_A0   PG0 /56 FMC_A10
-PA1                 PB1 /47 LTDC_R6        PC1 /27 SL5        PD1 /115 FMC_D3   PE1 /142 DISP_2   PF1 /11 FMC_A1   PG1 /57 FMC_A11
-PA2 /37 LTDC_B5     PB2                    PC2 /28 SL6        PD2               PE2 /1   DISP_3   PF2 /12 FMC_A2   PG2 /87 FMC_A12
-PA3                 PB3 /133 TDO-TRACESWO  PC3 /29 SL7        PD3 /117 LTDC_G7  PE3 /2   DISP_4   PF3 /13 FMC_A3   PG3 /88 FMC_A13
-PA4 /40 LTDC_VSYNC  PB4                    PC4 /44 LTDC_UD    PD4 /118 FMC_NOE  PE4 /3   DISP_5   PF4 /14 FMC_A4   PG4 /89 FMC_A14
-PA5 /41 LTDC_PWM    PB5 /135 RL3           PC5                PD5 /119 FMC_NWE  PE5 /4   DISP_6   PF5 /15 FMC_A5   PG5 /90 FMC_A15
-PA6 /42 LTDC_G2     PB6 /136 RL4           PC6 /96 LTDC_HSYNC PD6 /122 LTDC_B2  PE6 /5   DISP_7   PF6 /18 SL0      PG6 /91 LTDC_R7
-PA7 /43 LTDC_RL     PB7 /137 RL5           PC7 /97 LTDC_G6    PD7 /123 FMC_NE1  PE7 /58  FMC_D4   PF7 /19 SL1      PG7 /92 LTDC_CLK
-PA8                 PB8 /139 LTDC_B6       PC8 /98  DISP_8    PD8 /77 FMC_D13   PE8 /59  FMC_D5   PF8 /20 SL2      PG8
-PA9                 PB9 /140 LTDC_B7       PC9 /99  DISP_9    PD9 /78 FMC_D14   PE9 /60  FMC_D6   PF9 /21 SL3      PG9
-PA10                PB10                   PC10/111 LTDC_R2   PD10/79 FMC_D15   PE10/63  FMC_D7   PF10/22 LTDC_DE  PG10/125 LTDC_G3
-PA11/103 LTDC_R4    PB11                   PC11/112 DISP_10   PD11/80 FMC_A16   PE11/64  FMC_D8   PF11             PG11/126 LTDC_B3
-PA12/104 LTDC_R5    PB12                   PC12/113 DISP_11   PD12/81 FMC_A17   PE12/65  FMC_D9   PF12/50 FMC_A6   PG12/127 LTDC_B4
-PA13/105 TMS-SWDIO  PB13                   PC13/7   DISP_12   PD13/82 FMC_A18   PE13/66  FMC_D10  PF13/53 FMC_A7   PG13/128 RL0
-PA14/109 TCK-SWCLK  PB14                   PC14/8   DISP_13   PD14/85 FMC_D0    PE14/67  FMC_D11  PF14/54 FMC_A8   PG14/129 RL1
-PA15/110 JTDI       PB15                   PC15/9   DISP_14   PD15/86 FMC_D1    PE15/68  FMC_D12  PF15/55 FMC_A9   PG15/132 RL2
