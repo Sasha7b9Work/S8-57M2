@@ -19,10 +19,10 @@
 18/PF2  FMC_A2      62/VDD           106/PG2  -         150/PD6  LTDC_B2
 19/PF3  FMC_A3      63/PF13 FMC_A7   107/PG3  -         151/PD7  -
 20/PF4  FMC_A4      64/PF14 FMC_A8   108/PG4  -         152/PG9  -
-21/PF5  FMC_A5      65/PF15 FMC_A9   109/PG5  -         153/PG10 -
+21/PF5  FMC_A5      65/PF15 FMC_A9   109/PG5  -         153/PG10 U/D
 22/VSS              66/PG0  FMC_A10  110/PG6  LTDC_R7   154/PG11 LTDC_B3
 23/VDD              67/PG1  FMC_A11  111/PG7  LTDC_CLK  155/PG12 LTDC_B4
-24/PF6  -           68/PE7  FMC_D4   112/PG8  -         156/PG13 -
+24/PF6  -           68/PE7  FMC_D4   112/PG8  -         156/PG13 R/L
 25/PF7  -           69/PE8  FMC_D5   113/VSS            157/PG14 -
 26/PF8  -           70/PE9  FMC_D6   114/VDD            158/VSS
 27/PF9  -           71/VSS           115/PC6  -         159/VDD
@@ -45,19 +45,19 @@
 44/PH3  -           88/PH11 LTDC_R5  132/PI1  -         176/PI7  SL6
 
 *** Порты***
-PA0 /            PB0 / 56 LTDC_R3 PC0 /            PD0 /142 FMC_D2  PE0 /169 RL3     PF0 /16 FMC_A0  PG0 / 66 FMC_A10  
-PA1 /            PB1 / 57 LTDC_R6 PC1 /            PD1 /143 FMC_D3  PE1 /170 RL2     PF1 /17 FMC_A1  PG1 / 67 FMC_A11  
+PA0 /            PB0 / 56 LTDC_R3 PC0 /            PD0 /142 FMC_D2  PE0 /169 RL3     PF0 /16 FMC_A0  PG0 / 66 FMC_A10
+PA1 /            PB1 / 57 LTDC_R6 PC1 /            PD1 /143 FMC_D3  PE1 /170 RL2     PF1 /17 FMC_A1  PG1 / 67 FMC_A11
 PA2 /            PB2 /            PC2 /            PD2 /            PE2 /  1 SL5     PF2 /18 FMC_A2  PG2 /106 FMC_A12  PI2 /133 LTDC_G7
-PA3 / 47 LTDC_B5 PB3 /            PC3 /            PD3 /            PE3 /  2 SL4     PF3 /19 FMC_A3  PG3 /107 FMC_A13  
+PA3 / 47 LTDC_B5 PB3 /            PC3 /            PD3 /            PE3 /  2 SL4     PF3 /19 FMC_A3  PG3 /107 FMC_A13
 PA4 / 50 PWM     PB4 /            PC4 /            PD4 /146 FMC_NOE PE4 /  3 SL3     PF4 /20 FMC_A4  PG4 /108 FMC_A14  PI4 /173 RL1
 PA5 /            PB5 /            PC5 /            PD5 /147 FMC_NWE PE5 /  4 SL2     PF5 /21 FMC_A5  PG5 /109 FMC_A15  PI5 /174 RL0
-PA6 / 52 LTDC_G2 PB6 /164 RL5     PC6 /            PD6 /150 LTDC_B2 PE6 /  5 SL1     PF6 /           PG6 /110 LTDC_R7  PI6 /175 SL7          
-PA7 /            PB7 /165 RL4     PC7 /116 LTDC_G6 PD7 /151 FMC_NE1 PE7 / 68 FMC_D4  PF7 /           PG7 /111 LTDC_CLK PI7 /176 SL6 
+PA6 / 52 LTDC_G2 PB6 /164 RL5     PC6 /            PD6 /150 LTDC_B2 PE6 /  5 SL1     PF6 /           PG6 /110 LTDC_R7  PI6 /175 SL7
+PA7 /            PB7 /165 RL4     PC7 /116 LTDC_G6 PD7 /151 FMC_NE1 PE7 / 68 FMC_D4  PF7 /           PG7 /111 LTDC_CLK PI7 /176 SL6
 PA8 /119 AD0     PB8 /167 LTDC_B6 PC8 /117 FL_DISP PD8 / 96 FMC_D13 PE8 / 69 FMC_D5  PF8 /           PG8 /             PI8 /  7 SL0        PH8 / 85 LTDC_R2
 PA9 /120 AD1     PB9 /168 LTDC_B7 PC9 /118 SEL_0   PD9 / 97 FMC_D14 PE9 / 70 FMC_D6  PF9 /           PG9 /             PI9 / 11 LTDC_VSYNC
-PA10/121 AD2     PB10/ 79 LTDC_G4 PC10/139 CS0     PD10/ 98 FMC_D15 PE10/ 73 FMC_D7  PF10/28 LTDC_DE PG10/             PI10/ 12 LTDC_HSYNC PH10/ 87 LTDC_R4
+PA10/121 AD2     PB10/ 79 LTDC_G4 PC10/139 CS0     PD10/ 98 FMC_D15 PE10/ 73 FMC_D7  PF10/28 LTDC_DE PG10/153 U/D      PI10/ 12 LTDC_HSYNC PH10/ 87 LTDC_R4
 PA11/122 AD3     PB11/ 80 LTDC_G5 PC11/140 CS1     PD11/ 99 FMC_A16 PE11/ 74 FMC_D8  PF11/           PG11/154 LTDC_B3                      PH11/ 88 LTDC_R5
-PA12/123 AD4     PB12/            PC12/141 WR_DISP PD12/100 FMC_A17 PE12/ 75 FMC_D9  PF12/60 FMC_A6  PG12/155 LTDC_B4                   
-PA13/124 AD5     PB13/            PC13/  8 RD_DISP PD13/            PE13/ 76 FMC_D10 PF13/63 FMC_A7  PG13/                   
+PA12/123 AD4     PB12/            PC12/141 WR_DISP PD12/100 FMC_A17 PE12/ 75 FMC_D9  PF12/60 FMC_A6  PG12/155 LTDC_B4
+PA13/124 AD5     PB13/            PC13/  8 RD_DISP PD13/            PE13/ 76 FMC_D10 PF13/63 FMC_A7  PG13/156 R/L
 PA14/137 AD6     PB14/            PC14/  9 SEL_1   PD14/104 FMC_D0  PE14/ 77 FMC_D11 PF14/64 FMC_A8  PG14/                                 PH14/129 LTDC_G3
-PA15/138 AD7     PB15/            PC15/ 10 SEL_2   PD15/105 FMC_D1  PE15/ 78 FMC_D12 PF15/65 FMC_A9  PG15/             
+PA15/138 AD7     PB15/            PC15/ 10 SEL_2   PD15/105 FMC_D1  PE15/ 78 FMC_D12 PF15/65 FMC_A9  PG15/
