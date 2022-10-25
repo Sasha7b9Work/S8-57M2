@@ -8,16 +8,8 @@
   <WorkspaceName>WorkSpace</WorkspaceName>
 
   <project>
-    <PathAndName>.\Device\Device.uvprojx</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
-  </project>
-
-  <project>
     <PathAndName>.\Panel\Panel.uvprojx</PathAndName>
-  </project>
-
-  <project>
-    <PathAndName>.\DLoader\DLoader.uvprojx</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
   </project>
 
 </ProjectWorkspace>

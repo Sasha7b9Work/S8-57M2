@@ -1,2 +1,8 @@
 *.out
 *.bin
+*.dbgconf
+
+sources/Panel/Objects/*
+sources/Panel/Listings/*
+sources/Panel/Objects-Debug/*
+sources/Panel/Listings-Debug/*
